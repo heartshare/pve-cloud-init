@@ -1,16 +1,12 @@
 #!/bin/sh
 
-# Create Cloud Init enabled templates on Proxmox.
-# Supporting Debian, Ubuntu, Fedora, and Arch
+# Create Cloud-init enabled templates on Proxmox.
+# Supporting Debian, Ubuntu, Fedora, and Arch Linux
 
-# Received the following warning after importing the disk:
-
-# WARNING: You have not turned on protection against thin pools running out of space.
-# WARNING: Set activation/thin_pool_autoextend_threshold below 100 to trigger automatic extension of thin pools before they get full.
-# Logical volume "vm-8000-cloudinit" created.
-# WARNING: Sum of all thin volume sizes (194.20 GiB) exceeds the size of thin pool pve/data and the amount of free space in volume group (15.99 GiB).
-
-
+# TODO: 
+#   - dry this up with some vars and a for loop.
+#   - separate out downloading images from vm creation.
+#   - why not ansible?
 
 
 # Download Ubuntu 20.04
